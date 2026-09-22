@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AUTO OUEST PLUS 13 — Achat, Vente, Échange, Dépôt vente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img class="brand-logo" src="https://pub-527e4c33205944c28ce56503dfeaf3bf.r2.dev/omarpdp.jpg" alt="AUTO OUEST PLUS 13">
+      <span class="brand-name">AUTO OUEST<br><span class="thirteen">PLUS 13</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#vehicules">Véhicules</a>
+      <a href="#localisation">Nous trouver</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-phone" href="tel:0770676795">0770 67 67 95</a>
+    </nav>
+    <a class="phone-pill" href="tel:0770676795">0770 67 67 95</a>
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="top" class="hero">
+  <div class="hero-media">
+    <img src="https://pub-527e4c33205944c28ce56503dfeaf3bf.r2.dev/raptor1.JPG" alt="Ford Raptor R">
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Concession — Tlemcen</p>
+    <h1 class="hero-title">
+      <span>Achat</span>
+      <span>Vente</span>
+      <span>Échange</span>
+      <span class="accent">Dépôt vente</span>
+    </h1>
+    <div class="hero-actions">
+      <a href="#vehicules" class="btn btn-primary">Voir les véhicules</a>
+      <a href="tel:0770676795" class="btn btn-ghost">Appeler maintenant</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>ACHAT&nbsp;&nbsp;•&nbsp;&nbsp;VENTE&nbsp;&nbsp;•&nbsp;&nbsp;ÉCHANGE&nbsp;&nbsp;•&nbsp;&nbsp;DÉPÔT VENTE&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+    <span>ACHAT&nbsp;&nbsp;•&nbsp;&nbsp;VENTE&nbsp;&nbsp;•&nbsp;&nbsp;ÉCHANGE&nbsp;&nbsp;•&nbsp;&nbsp;DÉPÔT VENTE&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ===== VEHICULES ===== -->
+<section id="vehicules" class="vehicules">
+  <div class="section-head">
+    <h2 class="section-title">En vitrine</h2>
+    <p class="section-sub">Trois véhicules sélectionnés. Ouvrez une fiche pour la vidéo, les photos et la fiche technique complète.</p>
+  </div>
+
+  <div id="carList"><!-- injected by script.js --></div>
+</section>
+
+<!-- ===== LOCALISATION ===== -->
+<section id="localisation" class="localisation">
+  <div class="loc-text">
+    <p class="hero-eyebrow">Nous trouver</p>
+    <h2 class="section-title">WM66+4RP<br>Tlemcen</h2>
+    <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=WM66%2B4RP+Tlemcen" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+  </div>
+  <div class="loc-map">
+    <iframe
+      title="Localisation AUTO OUEST PLUS 13"
+      src="https://www.google.com/maps?q=WM66%2B4RP+Tlemcen&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+  <img class="contact-photo" src="https://pub-527e4c33205944c28ce56503dfeaf3bf.r2.dev/omarpdp.jpg" alt="AUTO OUEST PLUS 13">
+  <div class="contact-text">
+    <h2 class="section-title">Un véhicule à vendre ?<br>Une envie d'essai ?</h2>
+    <a class="btn btn-primary btn-lg" href="tel:0770676795">0770 67 67 95</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img class="footer-logo" src="https://pub-527e4c33205944c28ce56503dfeaf3bf.r2.dev/omarpdp.jpg" alt="">
+  <p>AUTO OUEST PLUS 13 — Achat, Vente, Échange et Dépôt vente. Tlemcen.</p>
+</footer>
+
+<!-- ===== CAR DETAIL OVERLAY (SPA panel, no page reload) ===== -->
+<div class="car-overlay" id="carOverlay" aria-hidden="true">
+  <div class="overlay-scroll">
+    <button class="overlay-close" id="overlayClose" aria-label="Fermer">&times;</button>
+    <div class="overlay-content" id="overlayContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
